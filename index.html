@@ -1,72 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nestor Develops</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nestor Skiadas - Photography</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <header>
-    <h1>Nestor Skiadas • Backend Software Engineer</h1>
-    <h3>and <a href="/photography.html">Photographer</a></h3>
-  </br>
-    <h3>Reachable via <a href="https://www.linkedin.com/in/nestor-skiadas-1a38bb198/">LinkedIn</a>.</h3>
-    <h3>A selection of archived YouTube content can be found <a href="https://www.youtube.com/@nestwr">here.</a></h3>
-  </header>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="logo">Nestor Skiadas &#47;&#47; Νέστωρ Σκιαδάς</a>
+            <ul class="nav-menu">
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-  <section class="hero">
-    <h2>High Throughput. Low Latency.</h2>
-    <h2>Rock-Solid Reliability.</h2>
-    <p>Nestor's code runs blazing fast, vehemently adheres to customer spec and will remain readable forever.</p>
-  </section>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="hero-title-line">Capturing</span>
+                <span class="hero-title-line">Moments</span>
+            </h1>
+            <p class="hero-subtitle">Photography that tells your story</p>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </header>
 
-  <section class="section">
-    <h2 style="margin-bottom: 1.5rem;">Featured Experience</h2>
-    <div class="projects">
-      <div class="card">
-        <h3>Titanium</h3>
-        <p>Created middleware components used by many of the world's biggest telecommunications providers.</p>
-        <p><i>Utilized Java, Maven, Jenkins, SIPP and SS7.</i></p>
-      </div>
-      <div class="card">
-        <h3>OpenBet</h3>
-        <p>Developed all the pieces that make sportsbook platforms tick and deliver them billions in monthly revenue.</p>
-        <p><i>Utilized Java, Maven, Jenkins, SQL, TCL, HTML, XML, JSON, Kafka, Protobuf and others.</i></p>
-      </div>
-    </div>
-  </section>
+    <!-- Portfolio Grid -->
+    <section id="work" class="portfolio">
+        <div class="portfolio-header">
+            <h2 class="section-title">Selected Work</h2>
+        </div>
+        
+        <div class="gallery">
+            <!-- Gallery Item 1 -->
+            <div class="gallery-item" data-category="portrait">
+                <div class="gallery-image">
+                    <!-- REPLACE THIS COMMENT WITH YOUR FLICKR EMBED CODE -->
+                    <img src="https://via.placeholder.com/800x1000/1a1a1a/666666?text=Your+Photo+1" alt="Portfolio Image 1">
+                </div>
+                <div class="gallery-info">
+                    <h3 class="gallery-title">Project Title</h3>
+                    <p class="gallery-category">Portrait</p>
+                </div>
+            </div>
 
-  <section class="section">
-    <h2 style="margin-bottom: 1.5rem;">Featured Projects</h2>
-    <div class="projects">
-      <div class="card">
-        <h3>Nearest Color GUI</h3>
-        <p>Proof-of-Concept for low resource, high performance color naming in native applications. Written in Rust, uses Egui.</p>
-        <p class="cardlink"><a href="https://github.com/NestorSkiad/nearest_color_gui"><img src="https://github.githubassets.com/assets/GitHub-Logo-ee398b662d42.png" width="75" height="20" style="filter: invert(1);"></a></p>
-      </div>
-      <div class="card">
-        <h3>StatTrakMe</h3>
-        <p>Personal weight and mood tracking through a miniscule web server running on a Raspberry Pi Zero. Written in Rust, uses Actix-Web.</p>
-        <p class="cardlink"><a href="https://github.com/NestorSkiad/koyeb-adventure/"><img src="https://github.githubassets.com/assets/GitHub-Logo-ee398b662d42.png" width="75" height="20" style="filter: invert(1);"></a></p>
-      </div>
-      <div class="card">
-        <h3>BattleGo</h3>
-        <p>BattleShip service using a REST API. Includes matchmaking functionality. Written in Go.</p>
-        <p class="cardlink"><a href="https://github.com/NestorSkiad/battlegov3"><img src="https://github.githubassets.com/assets/GitHub-Logo-ee398b662d42.png" width="75" height="20" style="filter: invert(1);"></a></p>
-      </div>
-      <div class="card">
-        <h3>This Website</h3>
-        <p>Served statically using GitHub Pages.</p>
-        <p class="cardlink"><a href="https://github.com/NestorSkiad/nestorskiad.github.io"><img src="https://github.githubassets.com/assets/GitHub-Logo-ee398b662d42.png" width="75" height="20" style="filter: invert(1);"></a></p>
-      </div>
-    </div>
-  </section>
+            <!-- Gallery Item 2 -->
+            <div class="gallery-item" data-category="landscape">
+                <div class="gallery-image">
+                    <!-- REPLACE THIS COMMENT WITH YOUR FLICKR EMBED CODE -->
+                    <img src="https://via.placeholder.com/800x600/1a1a1a/666666?text=Your+Photo+2" alt="Portfolio Image 2">
+                </div>
+                <div class="gallery-info">
+                    <h3 class="gallery-title">Project Title</h3>
+                    <p class="gallery-category">Landscape</p>
+                </div>
+            </div>
 
-  <footer>
-    <p>© 2025 Nestor Skiadas (Νέστωρ Σκιαδάς) — <a href="https://www.linkedin.com/in/nestor-skiadas-1a38bb198/">LinkedIn</a> — <a href="/robots.txt">robots.txt</a></p>
-  </footer>
+            <!-- Gallery Item 3 -->
+            <div class="gallery-item" data-category="event">
+                <div class="gallery-image">
+                    <!-- REPLACE THIS COMMENT WITH YOUR FLICKR EMBED CODE -->
+                    <img src="https://via.placeholder.com/800x800/1a1a1a/666666?text=Your+Photo+3" alt="Portfolio Image 3">
+                </div>
+                <div class="gallery-info">
+                    <h3 class="gallery-title">Project Title</h3>
+                    <p class="gallery-category">Event</p>
+                </div>
+            </div>
+
+            <!-- Gallery Item 4 -->
+            <div class="gallery-item" data-category="portrait">
+                <div class="gallery-image">
+                    <!-- REPLACE THIS COMMENT WITH YOUR FLICKR EMBED CODE -->
+                    <img src="https://via.placeholder.com/800x1200/1a1a1a/666666?text=Your+Photo+4" alt="Portfolio Image 4">
+                </div>
+                <div class="gallery-info">
+                    <h3 class="gallery-title">Project Title</h3>
+                    <p class="gallery-category">Portrait</p>
+                </div>
+            </div>
+
+            <!-- Gallery Item 5 -->
+            <div class="gallery-item" data-category="commercial">
+                <div class="gallery-image">
+                    <!-- REPLACE THIS COMMENT WITH YOUR FLICKR EMBED CODE -->
+                    <img src="https://via.placeholder.com/800x600/1a1a1a/666666?text=Your+Photo+5" alt="Portfolio Image 5">
+                </div>
+                <div class="gallery-info">
+                    <h3 class="gallery-title">Project Title</h3>
+                    <p class="gallery-category">Commercial</p>
+                </div>
+            </div>
+
+            <!-- Gallery Item 6 -->
+            <div class="gallery-item" data-category="landscape">
+                <div class="gallery-image">
+                    <!-- REPLACE THIS COMMENT WITH YOUR FLICKR EMBED CODE -->
+                    <img src="https://via.placeholder.com/800x1000/1a1a1a/666666?text=Your+Photo+6" alt="Portfolio Image 6">
+                </div>
+                <div class="gallery-info">
+                    <h3 class="gallery-title">Project Title</h3>
+                    <p class="gallery-category">Landscape</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-container">
+            <div class="about-image">
+                <!-- REPLACE WITH YOUR PHOTO -->
+                <img src="https://via.placeholder.com/600x800/1a1a1a/666666?text=Your+Photo" alt="Your Name">
+            </div>
+            <div class="about-content">
+                <h2 class="section-title">About</h2>
+                <div class="about-text">
+                    <p>I'm a photographer based in Grenoble, specializing in portraits and events. I've had the privilege of working with diverse clients and capturing stories across .</p>
+                    <p>My approach combines technical precision with artistic vision, creating images that resonate emotionally while maintaining the highest quality standards.</p>
+                    <p>When I'm not behind the camera, you'll find me [your interests/hobbies].</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Years</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">25+</div>
+                        <div class="stat-label">Countries</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <h2 class="section-title">Let's Work Together</h2>
+            <p class="contact-intro">Have a project in mind? I'd love to hear about it.</p>
+            
+            <div class="contact-methods">
+                <a href="mailto:your.email@example.com" class="contact-method">
+                    <span class="contact-label">Email</span>
+                    <span class="contact-value"><div class="email">nestor<span>.</span><span>_</span><span>skiadas</span>@<span>gmail.</span><span>outlook.</span><span>protonmail.</span>com</div></span>
+                </a>
+                <a href="https://instagram.com/nestwr_photog" target="_blank" class="contact-method">
+                    <span class="contact-label">Instagram</span>
+                    <span class="contact-value">@nestwr_photog</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2026 Nestor Skiadas. All rights reserved.</p>
+            <div class="footer-links">
+                <p>This website is hosted on GitHub Pages and does not serve cookies.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
