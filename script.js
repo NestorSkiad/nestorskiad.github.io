@@ -45,6 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
         window.addEventListener('scroll', () => {
             const scrolled = window.pageYOffset;
             const parallax = scrolled * 0.5;
+            
             hero.style.transform = `translateY(${parallax}px)`;
             
             // Fade out hero content as user scrolls
