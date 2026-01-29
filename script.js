@@ -126,21 +126,29 @@ document.addEventListener('DOMContentLoaded', () => {
                     
                     // Animate number count-up
                     const numberElement = entry.target.querySelector('.stat-number');
-                    const finalNumber = parseInt(numberElement.textContent);
+                    const originalText = numberElement.textContent;
+                    const hasPlus = originalText.includes('+');
+                    const finalNumber = parseInt(originalText.replace('+', ''));
                     const duration = 2000;
                     const steps = 60;
-                    const increment = finalNumber / steps;
+                    let increment = finalNumber / steps;
+
+                    if (increment < 0.09) {
+                        increment = 0.1;
+                    }
+
+                    console.log(increment);
+
                     let current = 0;
                     
                     const timer = setInterval(() => {
                         current += increment;
                         if (current >= finalNumber) {
-                            numberElement.textContent = numberElement.textContent.includes('+') 
-                                ? finalNumber + '+' 
-                                : finalNumber;
+                            numberElement.textContent = hasPlus ? finalNumber + '+' : finalNumber;
                             clearInterval(timer);
                         } else {
-                            numberElement.textContent = Math.floor(current);
+                            const current_int = Math.floor(current);
+                            numberElement.textContent = hasPlus ? current_int + '+' : current_int;
                         }
                     }, duration / steps);
                     
@@ -173,22 +181,5 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('load', () => {
         document.body.classList.add('loaded');
     });
-
-    // Cursor effect (optional - uncomment if desired)
-    /*
-    const cursor = document.createElement('div');
-    cursor.classList.add('custom-cursor');
-    document.body.appendChild(cursor);
-
-    document.addEventListener('mousemove', (e) => {
-        cursor.style.left = e.clientX + 'px';
-        cursor.style.top = e.clientY + 'px';
-    });
-
-    const hoverElements = document.querySelectorAll('a, button, .gallery-item');
-    hoverElements.forEach(el => {
-        el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
-        el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
-    });
-    */
+    
 });
